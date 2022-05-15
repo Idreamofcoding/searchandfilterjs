@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Filter And Search</title>    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search product name here.."
+        />
+        <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('Cattle')">
+          Cattle
+        </button>
+        <button class="button-value" onclick="filterProduct('Canine')">
+          Canine
+        </button>
+        <button class="button-value" onclick="filterProduct('Cat')">
+          Cats
+        </button>
+      </div>
+      <div id="products"></div>
+    </div>
+    <!-- Script -->
+    <script src="index.js"></script>
+  </body>
+</html>
